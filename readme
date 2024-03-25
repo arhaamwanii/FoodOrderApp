@@ -13,3 +13,8 @@ show the users the meals with an option to add them to the cart via a button
     - we use a useEffect to have full control over the rendering of the data, we recieve the data from the the object we recieve from the backend we map it
     - for every map we render a meal card and we pass on the index and all the requried data to that
     - once the menals are showing we get them to be showen in an particaular order
+
+STEP TWO 
+initalize a object which cotains the data we need to send to the backend matching the properites
+    - on click on a specific button acrding to the click create a new property in the object with the data that has been clicked 
+    - make sure to
