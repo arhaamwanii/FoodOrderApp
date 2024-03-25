@@ -1,0 +1,15 @@
+**this file will contian the building steps techical thinking of the app
+
+FOOD ORDERING APP
+    : we have an app that shows you the list of available meals : which we will have to fetch from the backend 
+    : then we need to have an cart option in where we store the meals that the user added to cart 
+    : then we need to show this cart to them with calculation, in there we need to give them the option to increase the number times they can buy an item
+    : then we need to show them the chek out where they will be able input there personal details
+    : then we take all these deatils and send them over to the backend 
+
+
+STEP ONE 
+show the users the meals with an option to add them to the cart via a button
+    - we use a useEffect to have full control over the rendering of the data, we recieve the data from the the object we recieve from the backend we map it
+    - for every map we render a meal card and we pass on the index and all the requried data to that
+    - once the menals are showing we get them to be showen in an particaular order
