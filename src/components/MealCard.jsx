@@ -9,7 +9,7 @@ export const MealCard = ({image , title , price , description , orderData, setOr
          updatedCart = {
             order: {
                 items : [
-                    {name : title , quantity : 1} 
+                    {name : title , quantity : 1 , price : price} 
                 ],
                 customer: {
                     name: undefined,
@@ -33,7 +33,7 @@ export const MealCard = ({image , title , price , description , orderData, setOr
                 
             }else{
                 inputObject =  {name : title , quantity : 1}
-                updatedCart.order.items.push( {name : title , quantity : 1} )
+                updatedCart.order.items.push( {name : title , quantity : 1 , price : price} )
             }
     
              updatedCart = {
@@ -53,12 +53,17 @@ export const MealCard = ({image , title , price , description , orderData, setOr
                 }
             }
              console.log(obj)
+
         }
-        setOrderData(updatedCart ? updatedCart : null)
+        setOrderData(updatedCart ? updatedCart : null)        
+        console.log(orderData)  
+
+    // well this pos here was rendered everywhere --
+
         return updatedCart
     }   
 
-      console.log(orderData)
+
   
     return (
     <div>
