@@ -20,7 +20,6 @@ export const Meals = ({orderData , setOrderData}) => {
       }   
       fetchAvailableMeals()
     } , [] )
-    
 
 
     return (
