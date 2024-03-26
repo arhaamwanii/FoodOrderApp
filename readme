@@ -17,4 +17,15 @@ show the users the meals with an option to add them to the cart via a button
 STEP TWO 
 initalize a object which cotains the data we need to send to the backend matching the properites
     - on click on a specific button acrding to the click create a new property in the object with the data that has been clicked 
-    - make sure to, once the data about which button was clicked is recieved we update the array using that data
+    - our origianl array does get updated but the catch is when we the array is updated with the new data, the old data remains there
+    - the images are showen on the click of a button a new object is created in the array where we store which item the user added to cart
+        - TO FIXES:
+        - the inital values should not exist
+        -  whever the same item is clicked more than once, we increase the quantity by one rather than creating a new object 
+
+STEP THREE 
+we show the data from the that we have collected to the user, in a box that 
+over lays the actuall thign(for this we most probably have to watch the user inptu section as well )
+    - box that over lays 
+    - we show the data collected from the inital user clicks
+    - we create a button to lc

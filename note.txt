@@ -1,3 +1,4 @@
 - that is the thing while calling an fuction and updating the state, 
 0 and we are using state, we have to to use useEffect to prevent infinite loops
 - so basically what we have in the public folder in the backend will be availble as a url path  when it is up and running
+- NEXT TUESDAY IS THE PAPER
