@@ -26,6 +26,12 @@ initalize a object which cotains the data we need to send to the backend matchin
 STEP THREE 
 we show the data from the that we have collected to the user, in a box that 
 over lays the actuall thign(for this we most probably have to watch the user inptu section as well )
-    - box that over lays 
-    - we show the data collected from the inital user clicks
-    - we create a button to lc
+        MODAL COMONENT:
+        that is what we need here -
+            - the backdrop , the component structure , component info
+            
+    - intial data collection and updation has been achieved 
+    - show the data in an over lay such and then in there also put 
+
+
+REACT FORMS
