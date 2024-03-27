@@ -32,5 +32,14 @@ over lays the actuall thign(for this we most probably have to watch the user inp
 
     - intial data collection and updation has been achieved 
     - show the data in an over lay such and then in there also put 
+    - so we are now showing the data ass well as at the same time
+    - on the click of a button array is being modified 
+
+STEP 4
+on the click of the button the screen in front disappears instead a input field is shown, where on the we can input the data for the conunation -
+    - we take the info from the input field and we modify the old object using this data 
+    - button to checkout
+        - on click of this button the object we have here in our case "orderData" will be sent to the backend -- and we will recieve it
+    - button to make the dialog disappear
 
 REACT FORMS
