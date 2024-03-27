@@ -44,9 +44,37 @@ export const Modal = ({ modalOpening, orderData, setModalOpening, setOrderData }
         console.log(orderData)
     }  
   
-    function handleCheckoutSubmit(event) {  
+    function handleCheckoutSubmit(event) { 
+        const orderData2 = {  
+            items: [/* array of items */],  
+            customer: {  
+              email: 'customer@example.com',  
+              name: 'John Doe',  
+              street: '123 Main St',  
+              'postal-code': '12345',  
+              city: 'Anytown'  
+            }  
+          };  
+         
+        fetch('http://localhost:3000/orders', {  
+            method: 'POST',  
+            headers: {  
+            'Content-Type': 'application/json'  
+            },  
+            body: JSON.stringify({ order: orderData.order})  
+        })  
+        .then(response => response.json())  
+        .then(data => {  
+            console.log(data.message); // "Order created!"  
+        })  
+        .catch(error => {  
+            console.log('Error creating order:', error);  
+        });  
+        
         event.preventDefault();  
         setShowCheckout(false);  
+        console.log(orderData)
+        console.log(orderData2)
     }  
   
     return (  
@@ -80,7 +108,7 @@ export const Modal = ({ modalOpening, orderData, setModalOpening, setOrderData }
                             <input type="text" name="name" placeholder="Name" onChange={handleCustomerChange} required />  
                             <input type="email" name="email" placeholder="Email" onChange={handleCustomerChange} required />  
                             <input type="text" name="street" placeholder="Street" onChange={handleCustomerChange} required />  
-                            <input type="text" name="postalcode" placeholder="Postal Code" onChange={handleCustomerChange} required />  
+                            <input type="text" name="'postal-code'" placeholder="Postal Code" onChange={handleCustomerChange} required />  
                             <input type="text" name="city" placeholder="City" onChange={handleCustomerChange} required />  
                             <button type="submit">Submit</button>  
                         </form>  

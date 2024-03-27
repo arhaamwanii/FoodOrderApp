@@ -15,7 +15,7 @@ export const MealCard = ({image , title , price , description , orderData, setOr
                     name: undefined,
                     email: undefined,
                     street: null ,
-                    postalcode: null,
+                    // 'postal-code': null,
                     city: null
                   }
             }
@@ -47,7 +47,7 @@ export const MealCard = ({image , title , price , description , orderData, setOr
                         name: undefined,
                         email: undefined, 
                         street: null ,
-                        postalcode: null,
+                        // 'postal-code': null,
                         city: null
                       }
                 }
